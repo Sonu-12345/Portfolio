@@ -1,16 +1,14 @@
-import React, { useEffect } from "react";
-import gsap from "gsap";
+import React from "react";
 import "../styles/Projects.css";
 
 function Projects() {
-  useEffect(() => {
-    gsap.fromTo(".projects", { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 1 });
-  }, []);
-
   return (
     <div className="projects">
       <h2>My Projects</h2>
-      <p>Check out some of my best work in web and app development.</p>
+      <h3>Web Chatting Application</h3>
+      <p>Built using React.js and Firebase with real-time messaging and authentication.</p>
+      <h3>IIT JEE/NEET Notes App</h3>
+      <p>Developed with Flutter and Google Drive, optimized for better performance.</p>
     </div>
   );
 }

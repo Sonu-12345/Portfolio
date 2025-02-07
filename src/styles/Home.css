@@ -1,14 +1,125 @@
+/* Home.css */
 .home {
-    background: #ffb88c;
-    padding: 20px;
-    border-radius: 8px;
-    animation: ease-in-out;
+  background: #f3f4f6;
+  padding: 50px 20px;
+  border-radius: 8px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
 
-    
-  }
-  
-  @keyframes slideIn {
-    from { transform: translateX(-50px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-  }
-  
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* General Sections */
+.section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 30px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.section:hover {
+  transform: scale(1.02);
+}
+
+/* About Section */
+.about {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+}
+
+.about-text {
+  font-size: 18px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: yellow;
+}
+
+/* Experience Section */
+.experience {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: rgb(44, 9, 9);
+  text-align: left;
+  margin-bottom: 1px;
+}
+
+.experience ul {
+  list-style: none;
+  padding: 20;
+}
+
+.experience ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  position: relative;
+}
+
+.experience ul li::before {
+  content: "✔";
+  color: yellow;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* Projects Section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  margin-top: 1px;
+}
+
+.project-card {
+  background: linear-gradient(to right, #091726, #00c6ff);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  transition: 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  background: #0e2f48;
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+  color: #333;
+  text-align: center;
+  gap: 20px;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

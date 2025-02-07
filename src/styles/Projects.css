@@ -1,9 +1,10 @@
 .projects {
-    background: #6a11cb;
+    background: #9a4aef;
     color: white;
     padding: 20px;
     border-radius: 8px;
     animation: fadeUp 1s ease-in-out;
+    margin-top: 1px;
   }
   
   @keyframes fadeUp {

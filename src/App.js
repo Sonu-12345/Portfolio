@@ -5,6 +5,8 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
 import gsap from "gsap";
 import "./styles/App.css";
 
@@ -25,6 +27,8 @@ function App() {
       <div className="page">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
