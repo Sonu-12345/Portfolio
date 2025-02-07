@@ -1,0 +1,14 @@
+.home {
+    background: #ffb88c;
+    padding: 20px;
+    border-radius: 8px;
+    animation: ease-in-out;
+
+    
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  

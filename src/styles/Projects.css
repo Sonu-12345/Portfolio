@@ -1,0 +1,13 @@
+.projects {
+    background: #6a11cb;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    animation: fadeUp 1s ease-in-out;
+  }
+  
+  @keyframes fadeUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
